@@ -161,6 +161,7 @@ abstract class VBox_Collection implements ArrayAccess, Iterator, Countable
         return key($this->_objects);
     }
 
+#[\ReturnTypeWillChange]
     public function next(): void
     {
         return next($this->_objects);
